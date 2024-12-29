@@ -1,0 +1,251 @@
+/* General body styling */
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #1c2b6d;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 90%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffea3b;
+    transform: translateY(-2px);
+}
+
+.nav-links a.active {
+    color: #ffea3b;
+}
+
+.container {
+    padding: 120px 50px 50px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    color: #232a63;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    color: #777;
+}
+
+.news-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.news-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-card-content {
+    padding: 20px;
+}
+
+.news-card-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #232a63;
+}
+
+.news-card-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.news-card-content a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #fdbb00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.news-card-content a:hover {
+    background-color: #232a63;
+    color: #fff;
+}
+
+.date {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+/* Footer Styles */
+footer {
+    background-color: #232a63;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin: 20px;
+}
+
+.footer-section h3 {
+    color: #fdbb00;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #fdbb00;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Modal Styles */
+.modal { 
+    display: none;
+    position: fixed;
+    z-index: 2000; /* Higher than the navbar */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    max-height: 29rem;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modalImage {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+#modalTitle {
+    color: #007bff;
+}
+
+#modalDate {
+    color: #888;
+    font-style: italic;
+}

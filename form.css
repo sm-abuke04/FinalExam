@@ -1,0 +1,263 @@
+/* Global Styles */
+body {
+    background: linear-gradient(135deg, #1c2b6d 0%, #4a5d9e 100%);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+main {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(28, 43, 109, 0.37);
+    backdrop-filter: blur(4px);
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Form Title */
+.form-title {
+    text-align: center;
+    color: #1c2b6d;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Form Layout */
+.ui.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Section Headers */
+.ui.header {
+    background: #1c2b6d;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.ui.header i {
+    margin-right: 10px;
+}
+
+/* Form Segments */
+.ui.segment {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+}
+
+/* Form Fields */
+.field {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #1c2b6d;
+    outline: none;
+    box-shadow: 0 0 5px rgba(28, 43, 109, 0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Button Styles */
+.ui.button {
+    background: #1c2b6d;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.ui.button:hover {
+    background: #4a5d9e;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.ui.button.secondary {
+    background: #6c757d;
+}
+
+.ui.button.submit {
+    background: #28a745;
+}
+
+/* Multi-column Layouts */
+.two.fields,
+.three.fields {
+    display: flex;
+    gap: 15px;
+}
+
+.two.fields .field,
+.three.fields .field {
+    flex: 1;
+}
+
+/* Photo Upload Styles */
+.photo-upload {
+    margin-bottom: 20px;
+}
+
+.photo-upload label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.photo-upload input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#photo-preview {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #1c2b6d;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.photo-preview-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    transition: width 0.3s ease;
+    background-image: linear-gradient(to right, rgb(255, 51, 0), rgb(255, 153, 0), rgb(251, 255, 0), rgb(94, 194, 0));
+}
+
+/* Form Navigation */
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* File Upload Styles */
+.file-upload-section {
+    margin-top: 20px;
+}
+
+.file-upload-section h4 {
+    margin-bottom: 10px;
+    color: #1c2b6d;
+}
+
+.file-upload {
+    margin-bottom: 10px;
+}
+
+.file-upload label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.file-upload input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Strand and Course Select Styles */
+#strand-select,
+#course-select {
+    width: 100%;
+}
+
+/* Form Section Display */
+.form-section:not(:first-of-type) {
+    display: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .two.fields,
+    .three.fields {
+        flex-direction: column;
+    }
+
+    #photo-preview {
+        width: 150px;
+        height: 150px;
+    }
+
+    .ui.button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-navigation {
+        flex-direction: column;
+    }
+}

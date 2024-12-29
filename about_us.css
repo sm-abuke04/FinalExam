@@ -1,0 +1,190 @@
+/* General body styling */
+body, html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    min-height: 100vh; /* Ensures body expands if content is minimal */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #1c2b6d;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 90%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffea3b;
+    transform: translateY(-2px);
+}
+
+.nav-links a.active {
+    color: #ffea3b;
+}
+
+/* Background Image */
+.background {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/UEP-Obelisk_-_University_of_Eastern_Philippines_Symbol_of_Manuel_Academy_-_Panorama.jpg/640px-UEP-Obelisk_-_University_of_Eastern_Philippines_Symbol_of_Manuel_Academy_-_Panorama.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 120px;
+    padding: 1rem;
+}
+
+.card, .uepAdmin, .mission-vision {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 500px;
+    border: 10px solid #00295cc4;
+}
+
+/* Lower Content */
+.lower-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.courses {
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.courses h1, .courses p {
+    margin: 0.5rem 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #232a63;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin: 20px;
+}
+
+.footer-section h3 {
+    color: #fdbb00;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #fdbb00;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .upper-content, .lower-content {
+        padding: 0.5rem;
+    }
+}
+
+.left-column p{
+    text-align: justify;
+}

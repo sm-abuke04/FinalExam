@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Eastern Philippines</title>
+    <link rel="icon" href="picture/UEP_logo-transparent.png" type="image/x-icon">
+    <link rel="stylesheet" href="news form.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="picture/UEP_logo-transparent.png" alt="University Logo">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="about_us.html">ABOUT US</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="news form.html" class="active">NEWS</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h1>Latest News & Updates</h1>
+            <p>Stay updated with the latest happenings in the University of Eastern Philippines</p>
+        </div>
+
+        <div class="news-section">
+            <!-- News 1 -->
+            <div class="news-card" data-id="news1">
+                <img src="picture/karabawpic.jpg" alt="UEP 50th Anniversary Celebration">
+                <div class="news-card-content">
+                    <span class="date">May 15, 2023</span>
+                    <h3>UEP Marks Golden Jubilee with Week-long Celebration</h3>
+                    <p>The University of Eastern Philippines commemorated its 50th founding anniversary with a series of events including an alumni homecoming, academic symposiums, and cultural showcases.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+                <div class="full-content" style="display: none;">
+                    <p>The University of Eastern Philippines commemorated its 50th founding anniversary with a series of events including an alumni homecoming, academic symposiums, and cultural showcases. The week-long celebration culminated in a grand gala attended by distinguished alumni and government officials.</p>
+                    <p>The celebration kicked off with a torch parade, symbolizing the light of knowledge that UEP has been spreading for half a century. Throughout the week, various departments organized exhibitions showcasing student projects and faculty research. A highlight of the celebration was the 'UEP Through the Decades' photo exhibit, which drew many nostalgic visitors.</p>
+                    <p>The gala dinner saw emotional reunions and inspiring speeches from successful alumni, emphasizing UEP's role in shaping leaders across various fields. The university also took this opportunity to launch its 'Vision 2073' plan, outlining ambitious goals for the next 50 years.</p>
+                </div>
+            </div>
+
+            <!-- News 2 -->     
+            <div class="news-card" data-id="news2">
+                <img src="picture/photo_2345.jpg" alt="New UEP Science Laboratory">
+                <div class="news-card-content">
+                    <span class="date">June 2, 2023</span>
+                    <h3>UEP Unveils State-of-the-Art Science Laboratory Complex</h3>
+                    <p>UEP proudly inaugurated its new Bio-Physical Sciences Laboratory Complex, featuring cutting-edge equipment and research facilities.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+                <div class="full-content" style="display: none;">
+                    <p>UEP proudly inaugurated its new Bio-Physical Sciences Laboratory Complex, featuring cutting-edge equipment and research facilities. This P50-million project aims to boost the university's research capabilities and support advanced scientific studies.</p>
+                    <p>The complex houses separate wings for Biology, Chemistry, and Physics, each equipped with the latest technology in their respective fields. The Biology wing features a genomics lab and a greenhouse for plant studies. The Chemistry wing boasts a state-of-the-art spectroscopy lab, while the Physics wing includes an advanced optics laboratory.</p>
+                    <p>This new facility is expected to significantly enhance UEP's capacity for groundbreaking research and attract top-tier faculty and students. The university has also announced plans for collaborative research projects with international institutions, leveraging this new infrastructure.</p>
+                </div>
+            </div>
+
+            <!-- News 3 -->
+            <div class="news-card">
+                <img src="picture/photo_scholar.jpg" alt="UEP Scholarship Program">
+                <div class="news-card-content">
+                    <span class="date">July 10, 2023</span>
+                    <h3>UEP Expands Scholarship Opportunities for AY 2023-2024</h3>
+                    <p>In a move to make higher education more accessible, UEP has increased its scholarship offerings by 30%. New programs include the "UEP Excellence Scholarship" and "Community Leadership Grant," benefiting over 500 students this academic year.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <!-- News 4 -->
+            <div class="news-card">
+                <img src="picture/photo_prez.jpg" alt="UEP International Conference">
+                <div class="news-card-content">
+                    <span class="date">August 5, 2023</span>
+                    <h3>UEP Hosts International Conference on Sustainable Development</h3>
+                    <p>UEP successfully organized the "International Conference on Sustainable Development in the Digital Age," featuring keynote speakers from 15 countries. The event highlighted UEP's commitment to global academic collaboration and research excellence.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <!-- News 5 (New) -->
+            <div class="news-card">
+                <img src="picture/photo_6789.jpg" alt="UEP Sports Achievement">
+                <div class="news-card-content">
+                    <span class="date">September 1, 2023</span>
+                    <h3>UEP Athletes Shine in National University Games</h3>
+                    <p>The UEP Sharks brought home 10 gold, 15 silver, and 20 bronze medals from the National University Games 2023. The university's swimming and track & field teams were particularly outstanding, setting new records in multiple events.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <!-- News 6 (New) -->
+            <div class="news-card">
+                <img src="picture/photo_5678.jpg" alt="UEP Community Outreach">
+                <div class="news-card-content">
+                    <span class="date">September 20, 2023</span>
+                    <h3>UEP Launches "Bayanihan for Education" Community Outreach Program</h3>
+                    <p>In line with its commitment to social responsibility, UEP initiated the "Bayanihan for Education" program. This initiative aims to provide educational support and resources to underprivileged communities in Eastern Samar.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal -->
+<div id="newsModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDate"></p>
+        <img id="modalImage" src="" alt="News Image">
+        <div id="modalContent"></div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About UEP</a></li>
+                <li><a href="https://www.facebook.com/UEP7OfficeoftheDirectorforAdmission">Admissions</a></li>
+                <li><a href="https://www.facebook.com/thepillaryueps">Academic Programs</a></li>
+                <li><a href="#">Research</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>University of Eastern Philippines</li>
+                <li>University Town, Northern Samar</li>
+                <li>Phone: (055) 123-4567</li>
+                <li>Email: info@uep.edu.ph</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/UEP7OfficeoftheDirectorforAdmission">Facebook</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Telegram</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 University of Eastern Philippines. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="news form.js"></script>
+</body>
+</html>
